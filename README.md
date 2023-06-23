@@ -37,12 +37,13 @@ poetry install
 # Работа с базой данной PostgreSQL
 
 - Установите пароль для работы с базой данных в переменную окружения: `password`.
-- В директории проекта создайте файл `database.ini` с содержимым:
+- В директории проекта создайте файл `database.ini`. Пример содержимого файла:
     ```
     [postgresql]
-    host=localhost
-    user=postgres
-    port=5432
+    HOST=localhost
+    USER=postgres
+    PASSWORD=password
+    POSTGRES_PORT=5432
     ```
 - В результате выполнения скрипта будет создана база данных `vacancies`. В ней будут следующие таблицы:
   - `employers` - содержит названия компаний;
