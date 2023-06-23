@@ -10,7 +10,7 @@ def config(filename='database.ini', section='postgresql') -> dict:
 
     # Чтение парсера
     parser.read(filename)
-    db = {'password': os.getenv('password')}
+    db = {}
 
     # Запись данных в парсер
     if parser.has_section(section):
