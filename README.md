@@ -43,7 +43,7 @@ poetry install
     HOST=localhost
     USER=postgres
     PASSWORD=password
-    POSTGRES_PORT=5432
+    PORT=5432
     ```
 - В результате выполнения скрипта будет создана база данных `vacancies`. В ней будут следующие таблицы:
   - `employers` - содержит названия компаний;
