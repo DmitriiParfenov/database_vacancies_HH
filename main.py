@@ -53,6 +53,7 @@ def main():
                 company.get_vacancies_from_employer(id_company)
                 dbmanager = DBManager()
                 dbmanager.add_employer_with_vacancies(company, 'vacancies')
+                print(f"Компания '{company.employer_name}' добавлена в базу данных.")
 
             # Переход к меню для выбора вакансий по критериями
             elif user_answer_adder == '2':

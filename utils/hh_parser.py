@@ -62,7 +62,7 @@ class HeadHunterApi(Parser):
         """Метод возвращает id компании."""
 
         # Объявление параметров запроса
-        self.__param = {'text': self.keyword}
+        self.__param = {'text': self.keyword, 'only_with_vacancies': True}
 
         # Запрос на сервер
         request = requests.get(self.__url_emp, headers=self.__header, params=self.__param)
